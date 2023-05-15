@@ -17,6 +17,8 @@
 		2CE9FAAC2A12727B004C5807 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAAB2A12727B004C5807 /* ProfileView.swift */; };
 		2CE9FAAE2A127EF6004C5807 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAAD2A127EF6004C5807 /* Image+Ext.swift */; };
 		2CE9FAB22A1280CF004C5807 /* MapViewLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAB12A1280CF004C5807 /* MapViewLogoView.swift */; };
+		2CE9FAB52A12819B004C5807 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAB42A12819B004C5807 /* LocationCell.swift */; };
+		2CE9FAB72A12845C004C5807 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAB62A12845C004C5807 /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2CE9FAAB2A12727B004C5807 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2CE9FAAD2A127EF6004C5807 /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
 		2CE9FAB12A1280CF004C5807 /* MapViewLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewLogoView.swift; sourceTree = "<group>"; };
+		2CE9FAB42A12819B004C5807 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		2CE9FAB62A12845C004C5807 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 		2CE9FAAF2A1280B7004C5807 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2CE9FAB32A128195004C5807 /* Cells */,
 				2CE9FAB02A1280C2004C5807 /* Images */,
 			);
 			path = "Custom Views";
@@ -155,8 +160,17 @@
 			isa = PBXGroup;
 			children = (
 				2CE9FAB12A1280CF004C5807 /* MapViewLogoView.swift */,
+				2CE9FAB62A12845C004C5807 /* AvatarView.swift */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		2CE9FAB32A128195004C5807 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CE9FAB42A12819B004C5807 /* LocationCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +246,11 @@
 				2CE9FA8E2A126D55004C5807 /* DubDubGrubApp.swift in Sources */,
 				2CE9FAAA2A127273004C5807 /* LocationListView.swift in Sources */,
 				2CE9FAA12A1271D3004C5807 /* MainTabView.swift in Sources */,
+				2CE9FAB72A12845C004C5807 /* AvatarView.swift in Sources */,
 				2CE9FAA82A12726A004C5807 /* LocationMapView.swift in Sources */,
 				2CE9FAAE2A127EF6004C5807 /* Image+Ext.swift in Sources */,
 				2CE9FAB22A1280CF004C5807 /* MapViewLogoView.swift in Sources */,
+				2CE9FAB52A12819B004C5807 /* LocationCell.swift in Sources */,
 				2CE9FAAC2A12727B004C5807 /* ProfileView.swift in Sources */,
 				2CE9FAA32A1271E7004C5807 /* Color+Ext.swift in Sources */,
 			);

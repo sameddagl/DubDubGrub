@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct LocationListView: View {
+    @State private var mockData = ["Chipotle", "AC Kitchen & Lounge", "Mezcal Restaruant"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                ForEach(mockData, id: \.self) { spot in
+                    NavigationLink(value: spot) {
+                        LocationCell(name: spot)
+                    }
+                }
+            }
+            .navigationTitle("Grub Spots")
+        }
     }
 }
 
