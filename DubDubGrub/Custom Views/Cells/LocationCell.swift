@@ -27,7 +27,7 @@ struct LocationCell: View {
                     .minimumScaleFactor(0.8)
                 HStack {
                     ForEach(0..<3) { _ in
-                        AvatarView()
+                        AvatarView(size: 30)
                     }
                 }
             }
