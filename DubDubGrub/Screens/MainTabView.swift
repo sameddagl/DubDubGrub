@@ -18,12 +18,18 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Locations", systemImage: "building")
                 }
-            ProfileView()
-                .tabItem {
-                    Label("Profile", systemImage: "person")
-                }
+            NavigationStack {
+                ProfileView()
+            }
+            .tabItem {
+                Label("Profile", systemImage: "person")
+            }
         }
         .tint(.brandPrimary)
+        .onAppear {
+            let appearance = UITabBarAppearance()
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
     }
 }
 

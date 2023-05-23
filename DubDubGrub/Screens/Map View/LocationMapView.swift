@@ -13,11 +13,15 @@ struct LocationMapView: View {
     
     var body: some View {
         ZStack {
-            MapViewLogoView()
-            
             Map(coordinateRegion: $region)
                 .ignoresSafeArea()
             
+            VStack {
+                MapViewLogoView()
+                    .shadow(radius: 10)
+                
+                Spacer()
+            }
         }
     }
 }

@@ -20,7 +20,11 @@ struct LocationListView: View {
                 }
             }
             .navigationTitle("Grub Spots")
+            .navigationDestination(for: String.self) { spot in
+                LocationDetailView()
+            }
         }
+        .tint(.brandPrimary)
     }
 }
 

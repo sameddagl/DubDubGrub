@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3EFBFD2A1CB901002F9A30 /* DGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3EFBFC2A1CB901002F9A30 /* DGButton.swift */; };
+		2C3EFC002A1CBFF5002F9A30 /* BioTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3EFBFF2A1CBFF5002F9A30 /* BioTextView.swift */; };
+		2C3EFC022A1CC102002F9A30 /* ProfileDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3EFC012A1CC102002F9A30 /* ProfileDescriptionText.swift */; };
 		2CE9FA8E2A126D55004C5807 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FA8D2A126D55004C5807 /* DubDubGrubApp.swift */; };
 		2CE9FA922A126D58004C5807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE9FA912A126D58004C5807 /* Assets.xcassets */; };
 		2CE9FA952A126D58004C5807 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE9FA942A126D58004C5807 /* Preview Assets.xcassets */; };
@@ -22,10 +25,13 @@
 		2CE9FAB92A128530004C5807 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAB82A128530004C5807 /* LocationDetailView.swift */; };
 		2CE9FABC2A128646004C5807 /* LocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FABB2A128646004C5807 /* LocationLabel.swift */; };
 		2CE9FABF2A1286C9004C5807 /* DetailViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FABE2A1286C9004C5807 /* DetailViewButton.swift */; };
-		2CE9FAC12A128C07004C5807 /* NameAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAC02A128C07004C5807 /* NameAvatarView.swift */; };
+		2CE9FAC12A128C07004C5807 /* NameAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9FAC02A128C07004C5807 /* NameAvatarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3EFBFC2A1CB901002F9A30 /* DGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGButton.swift; sourceTree = "<group>"; };
+		2C3EFBFF2A1CBFF5002F9A30 /* BioTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioTextView.swift; sourceTree = "<group>"; };
+		2C3EFC012A1CC102002F9A30 /* ProfileDescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDescriptionText.swift; sourceTree = "<group>"; };
 		2CE9FA8A2A126D55004C5807 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE9FA8D2A126D55004C5807 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		2CE9FA912A126D58004C5807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +49,7 @@
 		2CE9FAB82A128530004C5807 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		2CE9FABB2A128646004C5807 /* LocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLabel.swift; sourceTree = "<group>"; };
 		2CE9FABE2A1286C9004C5807 /* DetailViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewButton.swift; sourceTree = "<group>"; };
-		2CE9FAC02A128C07004C5807 /* NameAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAvatarView.swift; sourceTree = "<group>"; };
+		2CE9FAC02A128C07004C5807 /* NameAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAvatarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3EFBFE2A1CBDE1002F9A30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2CE9FA812A126D55004C5807 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +172,7 @@
 		2CE9FAAF2A1280B7004C5807 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2C3EFBFE2A1CBDE1002F9A30 /* Views */,
 				2CE9FABD2A1286BD004C5807 /* Buttons */,
 				2CE9FABA2A128631004C5807 /* Texts and Labels */,
 				2CE9FAB32A128195004C5807 /* Cells */,
@@ -179,7 +193,7 @@
 		2CE9FAB32A128195004C5807 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				2CE9FAC02A128C07004C5807 /* NameAvatarView.swift */,
+				2CE9FAC02A128C07004C5807 /* NameAvatarCell.swift */,
 				2CE9FAB42A12819B004C5807 /* LocationCell.swift */,
 			);
 			path = Cells;
@@ -189,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				2CE9FABB2A128646004C5807 /* LocationLabel.swift */,
+				2C3EFBFF2A1CBFF5002F9A30 /* BioTextView.swift */,
+				2C3EFC012A1CC102002F9A30 /* ProfileDescriptionText.swift */,
 			);
 			path = "Texts and Labels";
 			sourceTree = "<group>";
@@ -197,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE9FABE2A1286C9004C5807 /* DetailViewButton.swift */,
+				2C3EFBFC2A1CB901002F9A30 /* DGButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -277,9 +294,12 @@
 				2CE9FAB92A128530004C5807 /* LocationDetailView.swift in Sources */,
 				2CE9FABC2A128646004C5807 /* LocationLabel.swift in Sources */,
 				2CE9FAA12A1271D3004C5807 /* MainTabView.swift in Sources */,
+				2C3EFC002A1CBFF5002F9A30 /* BioTextView.swift in Sources */,
+				2C3EFBFD2A1CB901002F9A30 /* DGButton.swift in Sources */,
 				2CE9FAB72A12845C004C5807 /* AvatarView.swift in Sources */,
 				2CE9FAA82A12726A004C5807 /* LocationMapView.swift in Sources */,
-				2CE9FAC12A128C07004C5807 /* NameAvatarView.swift in Sources */,
+				2C3EFC022A1CC102002F9A30 /* ProfileDescriptionText.swift in Sources */,
+				2CE9FAC12A128C07004C5807 /* NameAvatarCell.swift in Sources */,
 				2CE9FAAE2A127EF6004C5807 /* Image+Ext.swift in Sources */,
 				2CE9FAB22A1280CF004C5807 /* MapViewLogoView.swift in Sources */,
 				2CE9FAB52A12819B004C5807 /* LocationCell.swift in Sources */,

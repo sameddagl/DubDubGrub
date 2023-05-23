@@ -25,6 +25,7 @@ struct LocationCell: View {
                     .fontWeight(.semibold)
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)
+                    .frame(maxWidth: 300, alignment: .leading)
                 HStack {
                     ForEach(0..<3) { _ in
                         AvatarView(size: 30)

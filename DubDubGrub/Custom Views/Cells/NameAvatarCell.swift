@@ -1,5 +1,5 @@
 //
-//  NameAvatarView.swift
+//  NameAvatarCell.swift
 //  DubDubGrub
 //
 //  Created by Samed Dağlı on 15.05.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NameAvatarView: View {
+struct NameAvatarCell: View {
     let name: String
     
     var body: some View {
@@ -23,6 +23,6 @@ struct NameAvatarView: View {
 
 struct NameAvatarView_Previews: PreviewProvider {
     static var previews: some View {
-        NameAvatarView(name: "Person Name")
+        NameAvatarCell(name: "Person Name")
     }
 }
